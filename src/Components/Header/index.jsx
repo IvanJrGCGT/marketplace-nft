@@ -20,9 +20,14 @@ export default function Header(props) {
 
                     .logo{
                         width: 7vw;
+                        margin-top: 30px;
                         img{
                             width: 100%;
                             cursor: pointer;
+                            transition: all .2s;
+                            :hover{
+                                width: 80%;
+                            }
 
                         }
                     }

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Components from "..";
 import Colors from "../../Assets/Colors";
 import img from "../../Assets/img";
 
@@ -13,10 +14,14 @@ export default function Card2(props) {
         border: solid 1px ${Colors.secondary};
         text-align: center;
         align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        
             .imgNft{
                 width: 65%;
                 height: 55%;
-                margin-top: -30px;
+                margin-top: -100px;
                 transition: all .2s;
                 border-radius: 10px 10px 0px 0px;
                 border: solid 1px ${Colors.secondary};
@@ -24,16 +29,16 @@ export default function Card2(props) {
 
             }
             .name{
+                margin-top: 20px;
                 font-size: 16pt;
                 color: ${Colors.white};
                 font-family: 'Urbanist', sans-serif;
             }
             .stamp{
-                margin-top: 10px;
-                width: 50px;
+                width: 80px;
             }
             .info{
-                font-family: 'Urbanist', sans-serif;
+                 font-family: 'Urbanist', sans-serif;
                 color: #fff;
                 font-size: 12pt;
                 display: flex;
@@ -53,13 +58,14 @@ return(
         <p className="name">
             {props.name}
         </p>
-        <img className="stamp" src={img.stamp} alt="" />
-        <div className="info">
-            <div className="items">5755</div>
-            <div className="views">15996</div>
-            <div className="price">$   15.28</div>
-            <div className="7D">$   4.09   m</div>
+{/*         <img className="stamp" src={img.stamp} alt="" />
+ */}        <div className="info">
+            <div className="items">0</div>
+            <div className="views">0</div>
+            <div className="price">$   0</div>
+            <div className="7D">$   0   m</div>
         </div>
+        <Components.Btn name="See more" fs="12pt" />
 
     </Card2>
 

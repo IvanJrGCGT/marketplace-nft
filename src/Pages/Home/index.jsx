@@ -123,7 +123,7 @@ export default function Home(props) {
             .title{
                 margin-left: 15px;
                 font-size: 30pt;
-                color: ${Colors.primary};
+                color: ${Colors.white};
 
             }
             .items{
@@ -150,7 +150,7 @@ export default function Home(props) {
             .title{
                 margin-left: 15px;
                 font-size: 26pt;
-                color: ${Colors.primary};
+                color: ${Colors.white};
             }
             .items{
                 display: flex;
