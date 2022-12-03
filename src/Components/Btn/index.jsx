@@ -14,6 +14,8 @@ export default function Btn(props) {
         align-items: center;
         justify-content: center;
         transition: all .5s;
+        font-size: ${props.fs};
+        margin: ${props.margin} 0;
         :hover{
             cursor: pointer;
       

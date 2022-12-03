@@ -7,7 +7,7 @@ import Components from "../../Components";
 export default function Home(props) {
     const HomePage = styled.div`
         width: 100vw;
-        height: 1000vh;
+        height: max-content;
         background-color: ${Colors.black};
         align-items: center;
         justify-content: center;
@@ -76,7 +76,7 @@ export default function Home(props) {
             }
         }
         .card{
-            margin: 0 auto;
+            margin: 20px auto;
             width: 80vw;
             height: 30vh;
             display: flex;
@@ -116,13 +116,15 @@ export default function Home(props) {
             }
         }
         .newst{
-            margin: 20px 0;
+            margin: 40px 0;
             width: 100vw;
             display: flex;
             flex-direction: column;
             .title{
                 margin-left: 15px;
                 font-size: 30pt;
+                color: ${Colors.primary};
+
             }
             .items{
                 margin-top: 15px;
@@ -135,13 +137,35 @@ export default function Home(props) {
                 .item{
                 width: 200px;
                 height: 200px;
-                margin: 10px;
+                margin: 20px;
                 img{
                     width: 100%;
                     height: 100%;
                 }
             }
             }
+        }
+        .topCollections{
+            width: 100vw;
+            .title{
+                margin-left: 15px;
+                font-size: 26pt;
+                color: ${Colors.primary};
+            }
+            .items{
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                align-items: center;
+                justify-content: space-evenly;
+                .btn{
+                    width: 40vw;
+                    height: 10vh;
+                    
+                }
+                
+            }
+
         }
     
     `
@@ -187,37 +211,31 @@ export default function Home(props) {
                 </div> 
                 <div className="newst">
                     <div className="title">
-                       
                         Newst NFT
-                        </div>
+                    </div>
                         <div className="items">
                         <Components.Card name="NFT 01" price="299.5" img={NFT.NFT3} />
                         <Components.Card name="NFT 01" price="299.5" img={NFT.NFT4} />
                         <Components.Card name="NFT 01" price="299.5" img={NFT.NFT5} />
                         <Components.Card name="NFT 01" price="299.5" img={NFT.NFT6} />
-                        
+                        </div>
+                </div>
+                <div className="topCollections">
+                    <div className="title">
+                        Top collections
+                        <div className="items">
+                            <Components.Card2 className="Card2" img={NFT.NFT4} name="NFT01" p="299.5" v="348522" i="984531"/>
+                            <Components.Card2 className="Card2" img={NFT.NFT5} name="NFT01" p="299.5" v="348522" i="984531"/>
+                            <Components.Card2 className="Card2" img={NFT.NFT6} name="NFT01" p="299.5" v="348522" i="984531"/>
+                            <Components.Card2 className="Card2" img={NFT.NFT3} name="NFT01" p="299.5" v="348522" i="984531"/>
+                            <div className="bnt">
+                            <Components.Btn name="View all collections" margin="10px" fs="12pt" ></Components.Btn>
 
-
-                        {/* <div className="item">
-                            <img src={NFT.NFT1} alt="" />
-                        </div>
-                        <div className="item">
-                            <img src={NFT.NFT2} alt="" />
-                        </div>
-                        <div className="item">
-                            <img src={NFT.NFT3} alt="" />
-                        </div>
-                        <div className="item">
-                            <img src={NFT.NFT4} alt="" />
-                        </div>
-                        <div className="item">
-                            <img src={NFT.NFT5} alt="" />
-                        </div>
-                        <div className="item">
-                            <img src={NFT.NFT6} alt="" />
-                        </div>  */}
+                            </div>
                         </div>
                     </div>
+                </div>
+                <Components.Footer />
                 
         </HomePage>
     )
