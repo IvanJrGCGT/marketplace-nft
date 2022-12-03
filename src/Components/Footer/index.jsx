@@ -111,6 +111,12 @@ export default function Footer(props) {
             }
         }
     }
+    .like{
+        width: 20vw;
+        img{
+            width: 40%;
+        }
+    }
     
     `
 
@@ -153,7 +159,11 @@ export default function Footer(props) {
                 </nav>
 
             </div>
-            
+            <div className="like">
+            <a href="https://www.behance.net/gallery/155664611/NFT-Marketplace-Design-Concept?tracking_source=project_owner_other_projects">
+            <img src={img.like} alt="" />
+            </a>
+            </div>
         </Footer>
     )
 }
