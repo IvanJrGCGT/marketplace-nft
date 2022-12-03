@@ -6,8 +6,9 @@ import img from "../../Assets/img";
 export default function Footer(props) {
 
     const Footer = styled.div`
+   
     width: 100vw;
-    height: 30vh;
+    height: 50vh;
     background-color: ${Colors.black};
     display: flex;
     flex-direction: row;
@@ -25,16 +26,87 @@ export default function Footer(props) {
         }        
     }
     .join{
+                .item:hover{
+            cursor: pointer;
+            color: ${Colors.primary};
+        }
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 15vw;
+        .title{
+            text-align: start;
+        }
         nav{
-            text-align: center;
-            align-items: center;
-            justify-content: center;
+            margin: 10px 0;
+            text-align: start;
+            justify-content: start;
             display: flex;
             flex-direction: column;
             .item{
+                margin: 1px 0;
                 color: ${Colors.white};
                 list-style: none;
                 font-family: 'Urbanist', sans-serif;
+              
+            }
+        }
+    }
+    .help{
+                .item:hover{
+            cursor: pointer;
+            color: ${Colors.primary};
+        }
+         width: 20vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 15vw;
+        .title{
+            text-align: start;
+        }
+        nav{
+            margin: 10px 0;
+            text-align: start;
+            justify-content: start;
+            display: flex;
+            flex-direction: column;
+            .item{
+                margin: 1px 0;
+                color: ${Colors.white};
+                list-style: none;
+                font-family: 'Urbanist', sans-serif;
+              
+            }
+        }
+    }
+    .account{
+                .item:hover{
+            cursor: pointer;
+            color: ${Colors.primary};
+        }
+
+         width: 20vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 15vw;
+        .title{
+            text-align: start;
+        }
+        nav{
+            margin: 10px 0;
+            text-align: start;
+            justify-content: start;
+            display: flex;
+            flex-direction: column;
+            .item{
+                margin: 1px 0;
+                color: ${Colors.white};
+                list-style: none;
+                font-family: 'Urbanist', sans-serif;
+                
               
             }
         }
@@ -58,9 +130,28 @@ export default function Footer(props) {
             </div>
             <div className="help">
                 <div className="title">Help</div>
+
+                <nav>
+                <li className="item">Twitter</li>
+                <li className="item">Help and Support</li>
+                <li className="item">FAQs</li>
+                <li className="item">Chat with Us</li>
+                <li className="item">Seller's University</li>
+                <li className="item">Editorial</li>
+                </nav>
+
             </div>
             <div className="account">
                 <div className="title">My account</div>
+                
+                <nav>
+                <li className="item">Create a Store</li>
+                <li className="item">List an item for sale</li>
+                <li className="item">Discord</li>
+                <li className="item">My profile</li>
+                <li className="item">Browse Digital Items</li>
+                </nav>
+
             </div>
             
         </Footer>
